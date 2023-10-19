@@ -28,7 +28,7 @@ function ClockInComponent() {
     }
 
     try {
-      const response = await fetch("http://localhost:5174/clockin", {
+      const response = await fetch("staffclock-backend.netlify.app/clockin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -62,7 +62,7 @@ function ClockInComponent() {
     }
 
     try {
-      const response = await fetch("http://localhost:5174/clockout", {
+      const response = await fetch("staffclock-backend.netlify.app/clockout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
